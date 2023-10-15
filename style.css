@@ -269,3 +269,30 @@ transform: rotate(-180deg);
     font-size: 20px;
     font-weight: 600;
 }
+
+/*  ======RESPONSIVE========= */
+
+@media (max-width : 400px) {
+    .sidebar.close .nav-list li .sub-menu{
+        display: none;
+    }
+    .sidebar{
+        width: 78px;
+    }
+
+    .sidebar.close{
+        width: 0;
+    }
+
+    .home-section{
+        left: 78px;
+        width: calc(100% - 78px);
+        z-index: 666;
+    }
+    .sidebar.close ~ .home-section{
+        width: 100%;
+        left: 0;
+
+    }
+    
+}
